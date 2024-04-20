@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>index</title>
+   <link rel="stylesheet" href="css.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&display=swap">
+
+    <script src="phaser.js"></script>
+ </head>
+ <body>
+  <div id="menu">
+    <div id="title_container">
+      <div id=title_1>FAST</div>
+      <div id=title_2>FALL</div>
+    </div>
+    <div id="button_container">
+     <div id="play_button">
+      <div id="div_play_button"></div><span id="span_play_button">PLAY</span></div>
+     <div id="exit_button"><div id="div_exit_button"></div><span id="span_exit_button">EXIT</span></div>
+     <span id="credits_1">Game by Cedrico Nilson</span>
+     <span id="credits_2">Musics by Dock Jones</span>
+     <span id="credits_date">2024</span>
+    </div>
+  </div>
+
+  <audio id="menu_song" src="assets/menu_song.mp3" loop></audio>
+  <audio id="playsound" src="assets/playsound.mp3" loop></audio>
+  <audio id="death_sound" src="assets/death_sound.mp3"></audio>
+  <audio id="retry_song" src="assets/retry_song.mp3" loop></audio>
+  <audio id="point_song" src="assets/point_song.mp3"></audio>
+  <div id="controls">
+     <div id="left_controls"></div>
+     <div id="right_controls"></div>
+    </div>
+
+    
+ <div id="retry">
+  <div id="retry_container">
+    <span id="game_over">Game over</span>
+    <span id="score_game_over">Score: 0</span>
+ 
+    <div id="retry_button"><div id="div_retry_button"></div><span id="span_retry_button">Retry</span></div>
+    <div id="quit_button"><div id="div_quit_button"></div><span id="span_quit_button">Quit</span></div>
+  </div>
+ </div>
+
+ <div id="score_text">0</div>
+
+ <div id="white_div"></div>
+    <script src="JS.js"></script>
+ </body>
+</html>

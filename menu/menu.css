@@ -1,0 +1,126 @@
+#menu_background {
+    position: absolute;
+    z-index: -1;
+    width: 90vw;
+    height: 90vh;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5vh;
+    width: 90vw;
+    height: 25vh;
+}
+
+#span_title {
+    font-size: 7.5vw;
+}
+
+#image {
+    max-width: 40vw;
+    max-height: 20vh;
+    animation: title_size 2s linear infinite;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width : 90vw;
+    height: 90vh;
+    transition: translate 2s ease;
+}
+
+#button_container {
+    display: grid;
+    position: absolute;
+    bottom: 22.5vh;
+    width: 20vw;
+    height: 40vh;
+}
+
+#play_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 15vh;
+    background-color: white;
+    font-size: 30px;
+    transition: background-color 1s ease, opacity 2s ease 2s, transform 1s ease;
+    animation: font_size_play_button 2s linear infinite;
+    user-select: none;
+}
+
+#play_button:hover {
+    background-color: #CFCFCF;
+    transform: translateY(-10%);
+}
+
+#exit_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 15vh;
+    background-color: white;
+    font-size: 30px;
+    transition: background-color 1s ease, opacity 2s ease 2s, transform 1s ease;
+    user-select: none;
+}
+
+#exit_button:hover {
+    background-color: #CFCFCF;
+    transform: translateY(-10%);
+}
+
+#song_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 20vw;
+    width: 7.5vw;
+    height: 7.5vw;
+    background-color: #800080;
+    border: 1vh solid black;
+    border-radius: 100%;
+}
+
+#song_on {
+    margin-top: 0.5vh;
+    max-width: 7vw;
+    max-height: 7.5vw;
+}
+
+#credits_1 {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 1vh;
+    font-size: 14px;
+    user-select: none;
+}
+
+#credits_2 {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 1vh;
+    font-size: 14px;
+    user-select: none;
+}
+
+@keyframes title_size {
+    0% { transform: translateY(0vh);}
+    50% {  transform: translateY(1vh);}
+    100% { transform: translateY(0vh);}
+}
+@keyframes font_size_play_button {
+    0% { font-size: 30px;}
+    50% { font-size: 35px;}
+    100% { font-size: 30px;}
+}
